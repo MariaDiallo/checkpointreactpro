@@ -1,0 +1,37 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.bok{
+    border: 1px solid red;
+    background-color: gray;
+    border-radius: 0.5rem;
+    width: 30rem;
+    height: 30rem;
+}
+.head{
+    display: flex;
+    margin: 1rem 0 5rem 1rem;
+}
+.headImg{
+    width: 10rem;
+    height: 10rem;
+    margin-right: 5rem;
+}
+.headImg img {
+    height: 100%;
+}
+.headText{
+    margin-top: 4.5rem;
+}
+.headText p{
+    margin-bottom: 1.5rem;
+}
+.foot p{
+    margin-bottom: 1.5rem;
+}

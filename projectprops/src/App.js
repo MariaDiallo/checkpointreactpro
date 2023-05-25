@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import ComposantProfil from './profil/ComposantProfil';
 import './App.css';
+import logo from './MA.JPG';
 
 function App() {
+  const fullname = 'Diallo mariam';
+  const bio = 'Le régime ivoirien de protection sociale protège les travailleurs salariés obligatoirement pour les risques suivants :•	la maladie : prestations en nature via la Couverture Maladie Universelle, régime de base et régime dassistance médicale ;•	les prestations familiales (dont la maternité) ;•	les accidents du travail-maladies professionnelles ;•	les pensions (vieillesse, invalidité et survivants).';
+  const profession =  'Etudiante';
+  const handlename = () =>{
+    alert(fullname);
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ComposantProfil fullname={fullname} profession={profession} bio={bio} logo={logo} handlename={handlename}/>
     </div>
   );
 }
